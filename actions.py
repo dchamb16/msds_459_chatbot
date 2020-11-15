@@ -9,11 +9,15 @@ import requests
 import json
 import os
 
+from neo_helper import NeoHelper
+
 load_dotenv()
 
-airtable_api_key=os.getenv("AIRTABLE_API_KEY")
-base_id=os.getenv("BASE_ID")
-table_name=os.getenv("TABLE_NAME")
+airtable_api_key = os.getenv("AIRTABLE_API_KEY")
+base_id = os.getenv("BASE_ID")
+table_name = os.getenv("TABLE_NAME")
+username = 'neo4j'
+password = 'password'
 
 def create_health_log(confirm_exercise, exercise, sleep, diet, stress, goal):
     request_url=f"https://api.airtable.com/v0/{base_id}/{table_name}"
@@ -43,6 +47,51 @@ def create_health_log(confirm_exercise, exercise, sleep, diet, stress, goal):
     
     return response
     print(response.status_code)
+
+
+def get_entity_name(tracker: Tracker, entity_type: Text):
+    entity_name = tracker.get_slot(entity_type)
+    if entity_name:
+        return entity_name
+
+    return None
+
+
+class ActionWhoDirected(Action):
+    def name(self):
+        return 'action_who_directed'
+       
+    @staticmethod
+    def required_slots(tracker):
+        return ['movie_name']
+
+    def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+        return {
+            'movie_name': [
+                self.from_entity(entity='movie_name'),
+                self.from_intent(intent='deny', value='None'),
+            ],
+        }
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any], 
+    ) -> List[Dict]:
+
+        helper = NeoHelper()
+        helper.connect_graph(username, password)
+
+        movie_name = tracker.get_slot('movie_name')
+
+        response = helper.query_who_directed(movie_name)
+        if response is not None:
+            dispatcher.utter_message(f'{response} directed {movie_name}')
+        
+        return []
+
+
 
 class HealthForm(FormAction):
 

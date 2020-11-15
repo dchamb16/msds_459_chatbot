@@ -161,3 +161,11 @@
 - thank you
 - thanks bye
 - thanks
+
+## intent:who_directed
+- who directed [King Kong](movie_name)
+- who was the director of [Avatar](movie_name)
+- who made [Hateful Eight](movie_name)
+- who was the director in [Harry Potter and the Half-Blood Prince](movie_name)
+- who directed the movie [Tangled](movie_name)
+- the film [The Lone Ranger](movie_name) was directed by who

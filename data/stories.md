@@ -104,3 +104,8 @@
   - health_form
   - form{"name":null}
   - utter_goodbye
+
+## who directed
+* query_director
+  - action_who_directed
+  - slot{"movie_name":null}

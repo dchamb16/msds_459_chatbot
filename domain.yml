@@ -8,6 +8,7 @@ actions:
 - utter_happy
 - utter_iamabot
 - utter_stress_info
+- action_who_directed
 
 intents:
 - ask_eat_healthy
@@ -23,6 +24,7 @@ intents:
 - inform
 - out_of_scope
 - thankyou
+- who_directed
 
 slots:
   confirm_exercise:
@@ -37,11 +39,14 @@ slots:
     type: unfeaturized
   goal:
     type: unfeaturized
+  movie_name:
+    type: unfeaturized
 
 entities:
   - exercise
   - sleep
   - stress
+  - movie_name
 
 responses:
   utter_cheer_up:

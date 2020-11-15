@@ -1,0 +1,7 @@
+py2neo
+pandas
+numpy==1.18
+packaging==19.0
+pytz==2019.3
+rasa==1.8.0
+python-dotenv

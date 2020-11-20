@@ -173,6 +173,8 @@
 - who directed [Shrek The Third](movie_name)?
 - who directed [Man of Steel](movie_name)
 - who was the director of the movie [Pacific Rim](movie_name)
+- who directed [Avatar](movie_name)
+- who directed the movie [The Lion King](movie_name)
 
 ## intent:who_acted_in
 - who acted in [King Kong](movie_name)
@@ -185,3 +187,17 @@
 - Who were the actors in [The Chronicles of Narnia: The Lion, the Witch and the Wardrobe](movie_name)?
 - who acted in the movie [Man of Steel](movie_name)
 - Who were the actors in [Pacific Rim](movie_name)
+- who acted in [Avatar](movie_name)
+- who acted in [The Lion King](movie_name)
+
+## intent:who_acted_with
+- who acted with [Johnny Depp](actor_name)?
+- who has acted with [Will Smith](actor_name)?
+- who are the actors that have acted with [Emma Stone](actor_name)?
+- [Tom Hanks](actor_name) has acted with who else?
+- which other actors have acted with [Harrison Ford](actor_name)
+- who are the other actors that have acted with [Jason Statham](actor_name)
+- who has acted with [Jason Statham](actor_name)
+- who are the actors that have acted with [Harrison Ford](actor_name)?
+- how has acted with [Kenny Baker](actor_name)
+- who acted with [CCH Pounder](actor_name)

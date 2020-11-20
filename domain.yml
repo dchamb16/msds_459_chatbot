@@ -1,5 +1,6 @@
 actions:
 - action_who_acted_in
+- action_who_acted_with
 - action_who_directed
 - utter_goodbye
 - utter_greet
@@ -7,8 +8,10 @@ actions:
 - utter_no_worries
 - utter_slot_values
 entities:
+- actor_name
 - movie_name
 intents:
+- who_acted_with
 - who_directed
 - who_acted_in
 - greet
@@ -22,7 +25,7 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_greet:
-  - text: Hi! What movie questions can I answer for you today?
+  - text: Hi! What movie questions can I answer for you?
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_no_worries:
@@ -33,5 +36,7 @@ session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 60
 slots:
+  actor_name:
+    type: unfeaturized
   movie_name:
     type: unfeaturized

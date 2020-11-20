@@ -169,3 +169,19 @@
 - who was the director in [Harry Potter and the Half-Blood Prince](movie_name)
 - who directed the movie [Tangled](movie_name)
 - the film [The Lone Ranger](movie_name) was directed by who
+- Who directed [The Lion King](movie_name)
+- who directed [Shrek The Third](movie_name)?
+- who directed [Man of Steel](movie_name)
+- who was the director of the movie [Pacific Rim](movie_name)
+
+## intent:who_acted_in
+- who acted in [King Kong](movie_name)
+- who were the actors in [The Golden Compass](movie_name)
+- actors in [The Great Gatsby](movie_name)
+- who played in [The Good Dinosaur](movie_name)
+- who were the people that played in [The Dark Knight](movie_name)
+- Who acted in [The Lion King](movie_name)
+- who played in [The Polar Express](movie_name)
+- Who were the actors in [The Chronicles of Narnia: The Lion, the Witch and the Wardrobe](movie_name)?
+- who acted in the movie [Man of Steel](movie_name)
+- Who were the actors in [Pacific Rim](movie_name)

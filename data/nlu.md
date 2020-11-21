@@ -175,6 +175,7 @@
 - who was the director of the movie [Pacific Rim](movie_name)
 - who directed [Avatar](movie_name)
 - who directed the movie [The Lion King](movie_name)
+- Who directed [Avatar](movie_name)
 
 ## intent:who_acted_in
 - who acted in [King Kong](movie_name)
@@ -189,6 +190,8 @@
 - Who were the actors in [Pacific Rim](movie_name)
 - who acted in [Avatar](movie_name)
 - who acted in [The Lion King](movie_name)
+- Who acted in [Terminator 2: Judgement Day](movie_name)?
+- who acted in [True Lies](movie_name)
 
 ## intent:who_acted_with
 - who acted with [Johnny Depp](actor_name)?
@@ -201,3 +204,14 @@
 - who are the actors that have acted with [Harrison Ford](actor_name)?
 - how has acted with [Kenny Baker](actor_name)
 - who acted with [CCH Pounder](actor_name)
+- who acted with [Meg Ryan](actor_name)
+- who has acted with [Jamie Lee Curtis](actor_name)?
+
+## intent:directed_which_movies
+- which movies has [James Cameron](director_name) directed?
+- [David Yates](director_name) directed which movies?
+- what movies has [Peter Jackson](director_name) directed?
+- which movies did [Ridley Scott](director_name) direct?
+- [Tim Burton](director_name) directed what movies?
+- which movies were directed by [Michael Bay](director_name)?
+- which movies has [James Cameron](director_name) directed?

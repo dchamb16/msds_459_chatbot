@@ -1,4 +1,5 @@
 actions:
+- action_directed_which_movies
 - action_who_acted_in
 - action_who_acted_with
 - action_who_directed
@@ -9,11 +10,13 @@ actions:
 - utter_slot_values
 entities:
 - actor_name
+- director_name
 - movie_name
 intents:
 - who_acted_with
 - who_directed
 - who_acted_in
+- directed_which_movies
 - greet
 - goodbye
 - affirm
@@ -37,6 +40,8 @@ session_config:
   session_expiration_time: 60
 slots:
   actor_name:
+    type: unfeaturized
+  director_name:
     type: unfeaturized
   movie_name:
     type: unfeaturized

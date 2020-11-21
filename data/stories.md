@@ -19,7 +19,7 @@
 * who_directed{"movie_name":null}
   - slot{"movie_name":null}
   - action_who_directed
-  - slot{"movie_name":null}
+  - reset_slots
 
 ## who acted in
 * greet
@@ -27,7 +27,7 @@
 * who_acted_in{"movie_name":null}
   - slot{"movie_name":null}
   - action_who_acted_in
-  - slot{"movie_name":null}
+  - reset_slots
 
 ## who acted with
 * greet
@@ -35,4 +35,13 @@
 * who_acted_with{"actor_name":null}
   - slot{"actor_name":null}
   - action_who_acted_with
-  - slot{"actor_name":null}
+  - reset_slots
+
+## directed which movies
+* greet
+  - utter_greet
+* directed_which_movies{"director_name":null}
+  - slot{"director_name":null}
+  - action_directed_which_movies
+  - reset_slots
+

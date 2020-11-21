@@ -176,6 +176,8 @@
 - who directed [Avatar](movie_name)
 - who directed the movie [The Lion King](movie_name)
 - Who directed [Avatar](movie_name)
+- Who directed [Six Days Seven Nights](movie_name)?
+- who directed the film [The Relic](movie_name)
 
 ## intent:who_acted_in
 - who acted in [King Kong](movie_name)
@@ -192,6 +194,8 @@
 - who acted in [The Lion King](movie_name)
 - Who acted in [Terminator 2: Judgement Day](movie_name)?
 - who acted in [True Lies](movie_name)
+- Who acted in [Kindergarten Cop](movie_name)?
+- who were the actors in [Timecop](movie_name)
 
 ## intent:who_acted_with
 - who acted with [Johnny Depp](actor_name)?
@@ -206,6 +210,7 @@
 - who acted with [CCH Pounder](actor_name)
 - who acted with [Meg Ryan](actor_name)
 - who has acted with [Jamie Lee Curtis](actor_name)?
+- who has acted with [Penelope Ann Miller](actor_name)?
 
 ## intent:directed_which_movies
 - which movies has [James Cameron](director_name) directed?
@@ -214,4 +219,22 @@
 - which movies did [Ridley Scott](director_name) direct?
 - [Tim Burton](director_name) directed what movies?
 - which movies were directed by [Michael Bay](director_name)?
-- which movies has [James Cameron](director_name) directed?
+- what movies has [Ivan Reitman](director_name) directed?
+- what movies has [Peter Hyams](director_name) directed?
+
+## intent:acted_in_which_movies
+- which movies has [Johnny Depp](actor_name) acted in?
+- [Christoph Waltz](actor_name) has acted in what movies?
+- what films has [Tom Hardy](actor_name) acted in?
+- what movies has [J.K. Simmons](actor_name) been in?
+- what movies has [Alan Rickman](actor_name) acted in?
+- what films has [Giancarlo Giannini](actor_name) been in?
+- [Robert Downey Jr.](actor_name) has been in which films?
+- [Leonardo DiCaprio](actor_name) has been in which movies?
+- [Bryce Dallas Howard](actor_name) has played in what movies?
+- [Bingbing Li](actor_name) has played in which films?
+- what movies has [A.J. Buckley](actor_name) played in?
+- which films has [Tzi Ma](actor_name) played in?
+- which movies has [Jennifer Lawrence](actor_name) acted in?
+- which films has [Harrison Ford](actor_name) played in?
+- what movies has [Chi Muoi Lo](actor_name) played in?

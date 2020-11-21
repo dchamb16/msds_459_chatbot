@@ -165,3 +165,39 @@ class ActionDirectedWhichMovies(Action):
             dispatcher.utter_message(f'Sorry, I couldn\'t find {director_name}')
     
         return [AllSlotsReset()]
+
+class ActionActedInWhichMovies(Action):
+
+    def name(self):
+        return 'action_acted_in_which_movies'
+
+    @staticmethod
+    def required_slots(tracker):
+        return ['actor_name']
+
+    def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+        return {
+            'actor_name' : [
+                self.from_entity(entity='actor_name'),
+                self.from_intent(intent='deny', value=None),
+            ],
+        }
+
+    def run(
+        self, 
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+
+        helper = NeoHelper()
+        helper.connect_graph(username, password)
+        actor_name = tracker.get_slot('actor_name')
+        response = helper.query_actor_acted_in(actor_name)
+
+        if response is not None:
+            dispatcher.utter_message(f'{actor_name} acted in {response}')
+        else:
+            dispatcher.utter_message(f'Sorry, I couldn\'t find {actor_name}')
+
+        return [AllSlotsReset()]

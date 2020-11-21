@@ -1,4 +1,5 @@
 actions:
+- action_acted_in_which_movies
 - action_directed_which_movies
 - action_who_acted_in
 - action_who_acted_with
@@ -13,10 +14,11 @@ entities:
 - director_name
 - movie_name
 intents:
-- who_acted_with
 - who_directed
 - who_acted_in
+- acted_in_which_movies
 - directed_which_movies
+- who_acted_with
 - greet
 - goodbye
 - affirm

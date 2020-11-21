@@ -45,3 +45,10 @@
   - action_directed_which_movies
   - reset_slots
 
+## acted in which movies
+* greet
+  - utter_greet
+* acted_in_which_movies{"actor_name":null}
+  - slot{"actor_name":null}
+  - action_acted_in_which_movies
+  - reset_slots

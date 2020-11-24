@@ -15,10 +15,10 @@ entities:
 - movie_name
 intents:
 - who_directed
-- who_acted_in
-- acted_in_which_movies
-- directed_which_movies
 - who_acted_with
+- acted_in_which_movies
+- who_acted_in
+- directed_which_movies
 - greet
 - goodbye
 - affirm

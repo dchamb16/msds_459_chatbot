@@ -55,86 +55,11 @@
 - I am great
 - I'm good
 
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
-
 ## intent:bot_challenge
 - are you a bot?
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
-
-## intent:ask_lower_stress
-- What do I do if I'm too stressed?
-- How can I lower my stress level?
-- What are some good ways to lower stress?
-- What are good ways to relax?
-- What are some things I can do to lower my stress?
-
-## intent:ask_eat_healthy
-- What's considered a healthy diet?
-- What's considered a good diet?
-- How do I follow a healthy diet?
-- What's an example of a healthy diet?
-- How do I eat healthy?
-- how do i eat healthy?
-
-## intent:ask_exercise
-- What's a good amount of exercise for someone in their thirties?
-- How much exercise should I be getting?
-- How much exercise is recommneded?
-- Is walking once a day enough exercise?
-- How much exercise should I do every day?
-- How many times per week should I go to the gym?
-
-## intent:inform
-- a full [8 hours](sleep)
-- only [four hours](sleep)
-- about [six hours](sleep)
-- [low](stress)
-- [medium](stress)
-- [high](stress)
-- Yes, I went for a [run](exercise)
-- uh huh an hour of [yoga](exercise)
-- yep, I went for a [hike](exercise)
-- Yes I took the dog for a [walk](exercise)
-- Yeah, I played [tennis](exercise)
-- I went [swimming](exercise)
-- Took a [spin class](exercise)
-- Did some [boxing](exercise)
-- [rock climbing](exercise)
-- played some [basketball](exercise)
-- played [football](exercise)
-- I did a [workout](exercise) video
-- I [want to get up early](goal) and go for a [run](exercise)
-- [Be more patient](goal) with my family
-- [Try to be a better friend](goal)
-- Make sure to [eat better tomorrow](goal)
-- [eat less junk food](goal)
-- [eat better](goal)
-- spend [less time on my phone](goal)
-- [don't procrastinate](goal)
-- [Go to bed earlier](goal)
-- [Don't stay up so late](goal)
-- [try to make some time to meditate](goal)
-- i ate [pretty healthy](diet) overall
-- [lots of fruits and vegetables](diet)
-- I [ate a salad](diet)
-- [too many snacks](diet)
-- [too many sweets](diet)
-- [too much junk food](diet)
-- a [lot of carbs](diet)
-- [too much fatty food](diet)
-- [Get more exercise](goal)
 
 ## intent:out_of_scope
 - that's not what I want to do
@@ -178,6 +103,10 @@
 - Who directed [Avatar](movie_name)
 - Who directed [Six Days Seven Nights](movie_name)?
 - who directed the film [The Relic](movie_name)
+- who was the director of the film [The Expendables 3](movie_name)?
+- who was the director of the film [Mystic Pizza](movie_name)
+- [U-571](movie_name) was directed by who?
+- [The Wolf of Wall Street](movie_name) was directed by whom?
 
 ## intent:who_acted_in
 - who acted in [King Kong](movie_name)
@@ -196,6 +125,10 @@
 - who acted in [True Lies](movie_name)
 - Who acted in [Kindergarten Cop](movie_name)?
 - who were the actors in [Timecop](movie_name)
+- who acted in [John Carter](movie_name)?
+- who were the actors in the movie [Edward Scissorhands](movie_name)?
+- who were the actors in [How to Lose a Guy in 10 Days](movie_name)?
+- who were the actors in the film [The Last Temptation of Christ](movie_name)?
 
 ## intent:who_acted_with
 - who acted with [Johnny Depp](actor_name)?
@@ -211,6 +144,7 @@
 - who acted with [Meg Ryan](actor_name)
 - who has acted with [Jamie Lee Curtis](actor_name)?
 - who has acted with [Penelope Ann Miller](actor_name)?
+- who has acted with [Polly Walker](actor_name)?
 
 ## intent:directed_which_movies
 - which movies has [James Cameron](director_name) directed?
@@ -221,6 +155,10 @@
 - which movies were directed by [Michael Bay](director_name)?
 - what movies has [Ivan Reitman](director_name) directed?
 - what movies has [Peter Hyams](director_name) directed?
+- which movies were directed by [Patrick Hughes](director_name)?
+- which moives have been directed by [Tim Burton](director_name)?
+- [Donald Petrie](director_name) has directed which movies?
+- what movies have been directed by [Martin Scorsese](director_name)
 
 ## intent:acted_in_which_movies
 - which movies has [Johnny Depp](actor_name) acted in?
@@ -238,3 +176,6 @@
 - which movies has [Jennifer Lawrence](actor_name) acted in?
 - which films has [Harrison Ford](actor_name) played in?
 - what movies has [Chi Muoi Lo](actor_name) played in?
+- what movies has [Harrison Ford](actor_name) acted in?
+- which films has [Conchata Ferrell](actor_name) been in?
+- [Matthew McConaughey](actor_name) has been in what movies?
